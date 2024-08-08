@@ -1,46 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="https://kit.fontawesome.com/c4a17c1d5b.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="panier.css">
+    <title>Panier d'Achat</title>
+    <link rel="stylesheet" href="noupan.css">
 </head>
 <body>
-    <div class="header">
-        <p class="logo">LOGO</p>
-        <div class="cart"><i class="fa-solid fa-bag-shopping"></i><p id="count">0</p></div>
-    </div>
-
+    
     <div class="container">
-        <div id="root"></div>
-        <div class="sidebar">
-            <div class="head"><p>Le Panier</p></div>
-            <div id="cartitem">Votre Panier est Vide</div>
-            <div class="foot">
-                <h3>Total</h3>
-                <h2 id="total">F CFA 0.00</h2>
+        <h1>PANIER</h1>
+
+<!--Element de panier pour article 1-->
+        <div class="cart-item" data-prix="10000">
+            <img src="https://i.imgur.com/vnzCEYa.jpeg" alt="">
+            <div>
+                <h2>Article 1</h2>
+                <p>Prix:10000 FCFA</p>
             </div>
-        </div>
+            <div class="ations">
+                <button class="diminuer">-</button>
+                <span class="quantite">1</span>
+                <button class="augmenter">+</button>
+                <span class="coeur">❤</span>
+                <span class="supprimer">Supprimer</span>
+            </div>
+
+        </div> 
+<!--element de panier pour article 2-->
+<div class="cart-item" data-prix="25000">
+    <img src="https://cdn.lesnumeriques.com/optim/produits/1/36871/canon-ixus-190_c6d54f0ece4fc223__450_400.jpg" alt="">
+    <div>
+        <h2>Article 2</h2>
+        <p>Prix:25000 FCFA</p>
+    </div>
+    <div class="ations">
+        <button class="diminuer">-</button>
+        <span class="quantite">1</span>
+        <button class="augmenter">+</button>
+        <span class="coeur">❤</span>
+        <span class="supprimer">Supprimer</span>
     </div>
 
+</div> 
+<!--Affichage du total-->
 
+    <div class="total">Total: 35000 FCFA</div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <script src="panier.js"></script>
+</div>
+<script src="noupan.js"></script>
     
 </body>
 </html>
